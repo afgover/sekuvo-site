@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sekuvo — your secure vault. A fully offline password vault for Android: no internet permission, AES-256, open source (GPLv3).">
-<title>Sekuvo — Your Secure Vault</title>
+<meta name="description" content="Sekuvo — tu bóveda segura. Una bóveda de contraseñas totalmente sin conexión para Android: sin permiso de internet, AES-256, código abierto (GPLv3).">
+<title>Sekuvo — Tu bóveda segura</title>
 <link rel="alternate" hreflang="en" href="https://sekuvo.com/">
 <link rel="alternate" hreflang="tr" href="https://sekuvo.com/tr/">
 <link rel="alternate" hreflang="es" href="https://sekuvo.com/es/">
@@ -136,78 +136,78 @@
   <header>
     <span class="brand">Sekuvo</span>
     <nav>
-      <a href="#security">Security</a>
-      <a href="#channels">Channels</a>
-      <a href="#download">Download</a>
-      <a href="https://sekuvo.com/privacy/">Privacy</a>
+      <a href="#security">Seguridad</a>
+      <a href="#channels">Canales</a>
+      <a href="#download">Descargar</a>
+      <a href="https://sekuvo.com/privacy/">Privacidad</a>
     </nav>
   </header>
-  <div class="langs"><a class="here" href="https://sekuvo.com/" lang="en">English</a> ·
+  <div class="langs"><a href="https://sekuvo.com/" lang="en">English</a> ·
     <a href="https://sekuvo.com/tr/" lang="tr">Türkçe</a> ·
-    <a href="https://sekuvo.com/es/" lang="es">Español</a> ·
+    <a class="here" href="https://sekuvo.com/es/" lang="es">Español</a> ·
     <a href="https://sekuvo.com/hi/" lang="hi">हिन्दी</a> ·
     <a href="https://sekuvo.com/ar/" lang="ar">العربية</a></div>
 
   <div class="hero">
     <div>
-      <span class="eyebrow">Offline password vault for Android</span>
-      <h1>Your secrets<br>never <em>leave.</em></h1>
-      <p class="lede">Sekuvo is your secure vault: passwords, cards and notes, encrypted on your phone with a key only your master password can derive. It has no server, no account, no sync — and no way to phone home.</p>
+      <span class="eyebrow">Bóveda de contraseñas sin conexión para Android</span>
+      <h1>Tus secretos<br>nunca <em>salen.</em></h1>
+      <p class="lede">Sekuvo es tu bóveda segura: contraseñas, tarjetas y notas, cifradas en tu teléfono con una clave que solo tu contraseña maestra puede derivar. Sin servidor, sin cuenta, sin sincronización — y sin forma de llamar a casa.</p>
       <div class="cta">
-        <a class="btn solid" href="https://github.com/afgover/Vault">Source on GitHub</a>
-        <a class="btn ghost" href="https://sekuvo.com/privacy/">Privacy policy</a>
+        <a class="btn solid" href="https://github.com/afgover/Vault">Código en GitHub</a>
+        <a class="btn ghost" href="https://sekuvo.com/privacy/">Política de privacidad</a>
       </div>
-      <p class="cta-note">Google Play listing is in preparation. Sekuvo is free and GPLv3 — the code is the proof.</p>
+      <p class="cta-note">La ficha de Google Play está en preparación. Sekuvo es gratis y GPLv3 — el código es la prueba.</p>
     </div>
 
-    <div class="proof" dir="ltr" role="img" aria-label="The app manifest requests camera, biometrics and Bluetooth, and a search for the INTERNET permission returns no matches.">
-      <span class="cap">AndroidManifest.xml — every permission it has</span>
+    <div class="proof" dir="ltr" role="img" aria-label="El manifiesto pide cámara, biometría y Bluetooth, y la búsqueda del permiso INTERNET no devuelve coincidencias.">
+      <span class="cap">AndroidManifest.xml — todos los permisos que tiene</span>
 <span class="p">&lt;uses-permission android:name="…USE_BIOMETRIC" /&gt;
 &lt;uses-permission android:name="…CAMERA" /&gt;
 &lt;uses-permission android:name="…VIBRATE" /&gt;
 &lt;uses-permission android:name="…BLUETOOTH_CONNECT" /&gt;</span>
 
 <span class="c">$ grep INTERNET AndroidManifest.xml</span>
-<span class="no">(no matches — the permission does not exist)</span>
+<span class="no">(sin coincidencias — ese permiso no existe)</span>
     </div>
   </div>
 
   <section id="security">
-    <span class="eyebrow">Security model</span>
-    <h2>Encryption you can audit, not believe.</h2>
-    <p class="kicker">Every sensitive field is sealed with AES-256-GCM. The key never touches a server because there is no server; it is derived on your phone, from your master password, every time you unlock.</p>
-    <div class="chain" dir="ltr">Master password ─<b>PBKDF2 · 310,000 rounds</b>─▶ KEK ─<b>AES-GCM wrap</b>─▶ dataKey ─▶ <b>AES-256-GCM</b> on every entry</div>
-    <div class="grid"><div class="cell"><h3>Locks when the screen sleeps</h3><p>The key is wiped from memory the moment the screen goes dark — folding a foldable counts. One unlock serves the app, the keyboard and autofill together.</p></div><div class="cell"><h3>Backups that outlive the phone</h3><p>One encrypted <span class="mono-note">.vaultbak</span> file, stored wherever you choose. File + backup password restores everything on any device — the recovery path is tested end to end.</p></div><div class="cell"><h3>No recovery backdoor</h3><p>Forget the master password and the data is gone. That is the design: a door only you can open has no spare key under the mat.</p></div></div>
+    <span class="eyebrow">Modelo de seguridad</span>
+    <h2>Cifrado que puedes auditar, no creer.</h2>
+    <p class="kicker">Cada campo sensible se sella con AES-256-GCM. La clave nunca toca un servidor porque no hay servidor; se deriva en tu teléfono, desde tu contraseña maestra, cada vez que desbloqueas.</p>
+    <div class="chain" dir="ltr">Contraseña maestra ─<b>PBKDF2 · 310.000 rondas</b>─▶ KEK ─<b>envoltura AES-GCM</b>─▶ dataKey ─▶ <b>AES-256-GCM</b> en cada entrada</div>
+    <div class="grid"><div class="cell"><h3>Se bloquea cuando la pantalla se apaga</h3><p>La clave se borra de la memoria en cuanto la pantalla se apaga — plegar un plegable también cuenta. Un solo desbloqueo sirve para la app, el teclado y el autocompletado.</p></div><div class="cell"><h3>Copias que sobreviven al teléfono</h3><p>Un único archivo cifrado <span class="mono-note">.vaultbak</span> guardado donde tú elijas. El archivo más su contraseña restauran todo en cualquier dispositivo — la vía de recuperación está probada de extremo a extremo.</p></div><div class="cell"><h3>Sin puerta trasera de recuperación</h3><p>Si olvidas la contraseña maestra, los datos se pierden. Es el diseño: una puerta que solo tú abres no guarda una llave bajo el felpudo.</p></div></div>
   </section>
 
   <section id="channels">
-    <span class="eyebrow">Clipboard-free by design</span>
-    <h2>Three ways out, all under your finger.</h2>
-    <p class="kicker">The clipboard is where secrets go to be stolen. Sekuvo types values straight to their destination instead.</p>
-    <div class="lanes"><div class="lane"><div class="n">Autofill</div><h3>Android autofill service</h3><p>Sign-in and card forms offer your entries directly. While locked, the system gets nothing — unlock first, then choose.</p></div><div class="lane"><div class="n">Keyboard</div><h3>Sekuvo Keyboard</h3><p>Switch to it in any app and type a stored secret into the field — searchable, recents on top, no copy step.</p></div><div class="lane"><div class="n">Bluetooth</div><h3>Types into your computer</h3><p>Your phone becomes a Bluetooth keyboard and types the secret at the computer's cursor. Nothing is installed on the computer.</p></div></div>
+    <span class="eyebrow">Sin portapapeles por diseño</span>
+    <h2>Tres salidas, todas bajo tu dedo.</h2>
+    <p class="kicker">El portapapeles es donde los secretos acaban robados. Sekuvo escribe los valores directamente en su destino.</p>
+    <div class="lanes"><div class="lane"><div class="n">Autocompletado</div><h3>Servicio de autocompletado de Android</h3><p>Los formularios de inicio de sesión y de tarjeta ofrecen tus entradas directamente. Bloqueado, el sistema no recibe nada — desbloquea primero, luego elige.</p></div><div class="lane"><div class="n">Teclado</div><h3>Teclado Sekuvo</h3><p>Cámbialo en cualquier app y escribe un secreto guardado en el campo — con búsqueda, los recientes arriba y sin paso de copiado.</p></div><div class="lane"><div class="n">Bluetooth</div><h3>Escribe en tu ordenador</h3><p>Tu teléfono se convierte en un teclado Bluetooth y escribe el secreto donde está el cursor. En el ordenador no se instala nada.</p></div></div>
   </section>
 
   <section id="download">
-    <span class="eyebrow">Get Sekuvo</span>
-    <h2>Free, open source, GPLv3.</h2>
+    <span class="eyebrow">Consigue Sekuvo</span>
+    <h2>Gratis, código abierto, GPLv3.</h2>
     <div class="dl">
       <div>
-        <h3>Android app</h3>
-        <p>The Google Play listing is in preparation. Until then you can build from source — the repository README covers it in two commands.</p>
+        <h3>Aplicación Android</h3>
+        <p>La ficha de Google Play está en preparación. Hasta entonces puedes compilar desde el código — el README del repositorio lo explica en dos comandos.</p>
       </div>
       <div>
-        <h3>Computer-side tools</h3>
-        <p>The QR transfer tools are downloads, not web pages: they run entirely on your machine, and this site never asks for a secret.</p>
-        <p class="mono-note" dir="ltr">github.com → Releases · verify the published SHA-256</p>
+        <h3>Herramientas de escritorio</h3>
+        <p>Las herramientas de transferencia por QR son descargas, no páginas web: funcionan por completo en tu máquina, y este sitio nunca te pide un secreto.</p>
+        <p class="mono-note" dir="ltr">github.com → Releases · verifica el SHA-256 publicado</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <span>© 2026 Ahmet Govercile · Sekuvo — <em>your secure vault.</em></span>
+    <span>© 2026 Ahmet Govercile · Sekuvo — <em>tu bóveda segura.</em></span>
     <span dir="ltr">
       <a href="https://github.com/afgover/Vault">GitHub</a> ·
-      <a href="https://sekuvo.com/privacy/">Privacy</a> ·
+      <a href="https://sekuvo.com/privacy/">Privacidad</a> ·
       <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>
     </span>
   </footer>
