@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="ja" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sekuvo — votre coffre sécurisé. Un coffre de mots de passe entièrement hors ligne pour Android : sans permission internet, AES-256, open source (GPLv3).">
-<title>Sekuvo — Votre coffre sécurisé</title>
+<meta name="description" content="Sekuvo — あなたの安全な保管庫。完全にオフラインで動作するAndroid用パスワード保管庫: インターネット権限なし、AES-256暗号化、オープンソース（GPLv3）。">
+<title>Sekuvo — あなたの安全な保管庫</title>
 <link rel="icon" href="/favicon.png" sizes="32x32">
 <link rel="icon" href="/img/icon-512.png" sizes="512x512">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
@@ -23,7 +23,7 @@
 <link rel="alternate" hreflang="de" href="https://sekuvo.com/de/">
 <link rel="alternate" hreflang="ja" href="https://sekuvo.com/ja/">
 <link rel="alternate" hreflang="x-default" href="https://sekuvo.com/">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
   html { color-scheme: light dark; }
   :root {
@@ -53,13 +53,13 @@
     margin: 0;
     background: var(--ground);
     color: var(--ink);
-    font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    font-family: "Noto Sans JP", system-ui, sans-serif;
     font-size: 17px;
     line-height: 1.65;
   }
   .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
 
-  h1, h2, h3 { font-family: "Bricolage Grotesque", Georgia, serif; line-height: 1.14; text-wrap: balance; margin: 0; }
+  h1, h2, h3 { font-family: "Noto Sans JP", system-ui, sans-serif; line-height: 1.14; text-wrap: balance; margin: 0; }
   .eyebrow {
     font-family: "IBM Plex Mono", monospace;
     font-size: .78rem; letter-spacing: .18em; text-transform: uppercase;
@@ -69,7 +69,7 @@
   a:focus-visible, .btn:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
 
   header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1.6rem 0 0; flex-wrap: wrap; }
-  .brand { font-family: "Bricolage Grotesque", Georgia, serif; font-weight: 700; font-size: 1.25rem; }
+  .brand { font-family: "Noto Sans JP", system-ui, sans-serif; font-weight: 700; font-size: 1.25rem; }
   nav { display: flex; gap: 1.4rem; font-size: .92rem; flex-wrap: wrap; }
   nav a { color: var(--muted); text-decoration: none; }
   nav a:hover { color: var(--brass); }
@@ -148,11 +148,11 @@
   <header>
     <span class="brand">Sekuvo</span>
     <nav>
-      <a href="#security">Sécurité</a>
-      <a href="#channels">Canaux</a>
-      <a href="#download">Télécharger</a>
-      <a href="https://sekuvo.com/fr/guide/">Guide</a>
-      <a href="https://sekuvo.com/fr/privacy/">Confidentialité</a>
+      <a href="#security">セキュリティ</a>
+      <a href="#channels">チャネル</a>
+      <a href="#download">ダウンロード</a>
+      <a href="https://sekuvo.com/ja/guide/">ガイド</a>
+      <a href="https://sekuvo.com/ja/privacy/">プライバシー</a>
     </nav>
   </header>
   <div class="langs"><a href="https://sekuvo.com/" lang="en">English</a> ·
@@ -161,78 +161,78 @@
     <a href="https://sekuvo.com/hi/" lang="hi">हिन्दी</a> ·
     <a href="https://sekuvo.com/ar/" lang="ar">العربية</a> ·
     <a href="https://sekuvo.com/zh/" lang="zh">简体中文</a> ·
-    <a class="here" href="https://sekuvo.com/fr/" lang="fr">Français</a> ·
+    <a href="https://sekuvo.com/fr/" lang="fr">Français</a> ·
     <a href="https://sekuvo.com/bn/" lang="bn">বাংলা</a> ·
     <a href="https://sekuvo.com/pt/" lang="pt">Português</a> ·
     <a href="https://sekuvo.com/ru/" lang="ru">Русский</a> ·
     <a href="https://sekuvo.com/ur/" lang="ur">اردو</a> ·
     <a href="https://sekuvo.com/id/" lang="id">Bahasa Indonesia</a> ·
     <a href="https://sekuvo.com/de/" lang="de">Deutsch</a> ·
-    <a href="https://sekuvo.com/ja/" lang="ja">日本語</a></div>
+    <a class="here" href="https://sekuvo.com/ja/" lang="ja">日本語</a></div>
 
   <div class="hero">
     <div>
-      <span class="eyebrow">Coffre de mots de passe hors ligne pour Android</span>
-      <h1>Tes secrets<br>ne <em>sortent</em> jamais.</h1>
-      <p class="lede">Sekuvo est ton coffre sécurisé : mots de passe, cartes et notes, chiffrés sur ton téléphone avec une clé que seul ton mot de passe principal peut dériver. Pas de serveur, pas de compte, pas de synchronisation — et aucun moyen d'appeler la maison.</p>
+      <span class="eyebrow">Androidのためのオフラインパスワード保管庫</span>
+      <h1>あなたの秘密は<br><em>外に出ません。</em></h1>
+      <p class="lede">Sekuvoはあなたの安全な保管庫です: パスワード、カード、メモを、あなたのマスターパスワードからしか導出できない鍵で端末上に暗号化します。サーバーなし、アカウントなし、同期なし — そして誰かに知らせる手段もありません。</p>
       <div class="cta">
-        <a class="btn solid" href="https://github.com/afgover/Vault">Code source sur GitHub</a>
-        <a class="btn ghost" href="https://sekuvo.com/fr/privacy/">Politique de confidentialité</a>
+        <a class="btn solid" href="https://github.com/afgover/Vault">GitHubのソースコード</a>
+        <a class="btn ghost" href="https://sekuvo.com/ja/privacy/">プライバシーポリシー</a>
       </div>
-      <p class="cta-note">La fiche Google Play est en préparation. Sekuvo est gratuit et sous GPLv3 — le code en est la preuve.</p>
+      <p class="cta-note">Google Playの掲載は準備中です。Sekuvoは無料でGPLv3ライセンスです — コードがその証拠です。</p>
     </div>
 
-    <div class="proof" dir="ltr" role="img" aria-label="Le manifeste de l'application demande la caméra, la biométrie et le Bluetooth, et une recherche de la permission INTERNET ne renvoie aucun résultat.">
-      <span class="cap">AndroidManifest.xml — toutes les permissions qu'elle possède</span>
+    <div class="proof" dir="ltr" role="img" aria-label="アプリのマニフェストはカメラ、生体認証、Bluetoothを要求しており、INTERNET権限の検索は何もヒットしません。">
+      <span class="cap">AndroidManifest.xml — このアプリが持つすべての権限</span>
 <span class="p">&lt;uses-permission android:name="…USE_BIOMETRIC" /&gt;
 &lt;uses-permission android:name="…CAMERA" /&gt;
 &lt;uses-permission android:name="…VIBRATE" /&gt;
 &lt;uses-permission android:name="…BLUETOOTH_CONNECT" /&gt;</span>
 
 <span class="c">$ grep INTERNET AndroidManifest.xml</span>
-<span class="no">(aucun résultat — cette permission n'existe pas)</span>
+<span class="no">（該当なし — この権限は存在しません）</span>
     </div>
   </div>
 
   <section id="security">
-    <span class="eyebrow">Modèle de sécurité</span>
-    <h2>Un chiffrement à auditer, pas à croire sur parole.</h2>
-    <p class="kicker">Chaque champ sensible est scellé avec AES-256-GCM. La clé ne touche jamais un serveur, car il n'y en a pas ; elle est dérivée sur ton téléphone, à partir de ton mot de passe principal, à chaque déverrouillage.</p>
-    <div class="chain" dir="ltr">Mot de passe principal ─<b>PBKDF2 · 310 000 tours</b>─▶ KEK ─<b>enveloppement AES-GCM</b>─▶ dataKey ─▶ <b>AES-256-GCM</b> sur chaque entrée</div>
-    <div class="grid"><div class="cell"><h3>Se verrouille quand l'écran s'éteint</h3><p>La clé est effacée de la mémoire dès que l'écran s'assombrit — replier un pliable compte aussi. Un seul déverrouillage sert à la fois l'application, le clavier et la saisie automatique.</p></div><div class="cell"><h3>Des sauvegardes qui survivent au téléphone</h3><p>Un unique fichier chiffré <span class="mono-note">.vaultbak</span>, stocké où tu veux. Le fichier plus le mot de passe de sauvegarde restaurent tout sur n'importe quel appareil — le chemin de récupération est testé de bout en bout.</p></div><div class="cell"><h3>Aucune porte dérobée de récupération</h3><p>Oublie le mot de passe principal et les données disparaissent. C'est le principe même : une porte que toi seul peux ouvrir n'a pas de double planqué sous le paillasson.</p></div></div>
+    <span class="eyebrow">セキュリティモデル</span>
+    <h2>信じるのではなく、検証できる暗号化。</h2>
+    <p class="kicker">機密性の高いすべてのフィールドはAES-256-GCMで封印されます。サーバーが存在しないため、鍵がサーバーに触れることはありません。鍵はロック解除のたびに、あなたの端末上でマスターパスワードから導出されます。</p>
+    <div class="chain" dir="ltr">マスターパスワード ─<b>PBKDF2 · 310,000回</b>─▶ KEK ─<b>AES-GCMラップ</b>─▶ dataKey ─▶ 各アイテムに<b>AES-256-GCM</b></div>
+    <div class="grid"><div class="cell"><h3>画面が消えるとロック</h3><p>画面が暗くなった瞬間に鍵はメモリから消去されます — 折りたたみ式端末を閉じることも含まれます。1回のロック解除で、アプリ、キーボード、自動入力のすべてが機能します。</p></div><div class="cell"><h3>端末より長く残るバックアップ</h3><p>1つの暗号化された<span class="mono-note">.vaultbak</span>ファイルを、好きな場所に保存できます。ファイルとバックアップパスワードがあれば、どの端末でもすべて復元できます — 復元の流れは最初から最後まで検証済みです。</p></div><div class="cell"><h3>復旧用の裏口はありません</h3><p>マスターパスワードを忘れると、データは失われます。これは意図的な設計です: あなただけが開けるドアには、玄関マットの下に予備の鍵は隠されていません。</p></div></div>
   </section>
 
   <section id="channels">
-    <span class="eyebrow">Sans presse-papiers, par conception</span>
-    <h2>Trois sorties, toutes sous ton doigt.</h2>
-    <p class="kicker">Le presse-papiers est l'endroit où les secrets se font voler. Sekuvo écrit les valeurs directement à leur destination.</p>
-    <div class="lanes"><div class="lane"><div class="n">Saisie automatique</div><h3>Service de saisie automatique Android</h3><p>Les formulaires de connexion et de carte proposent directement tes entrées. Verrouillé, le système ne reçoit rien — déverrouille d'abord, puis choisis.</p></div><div class="lane"><div class="n">Clavier</div><h3>Clavier Sekuvo</h3><p>Bascule dessus dans n'importe quelle application et saisis un secret enregistré dans le champ — avec recherche, éléments récents en haut, sans étape de copie.</p></div><div class="lane"><div class="n">Bluetooth</div><h3>Écrit sur ton ordinateur</h3><p>Ton téléphone devient un clavier Bluetooth et saisit le secret à l'emplacement du curseur de l'ordinateur. Rien n'est installé sur l'ordinateur.</p></div></div>
+    <span class="eyebrow">設計上、クリップボードを使わない</span>
+    <h2>3つの経路、すべて指先ひとつで。</h2>
+    <p class="kicker">クリップボードは秘密情報が盗まれる場所です。だからこそSekuvoは値を直接、目的の場所に入力します。</p>
+    <div class="lanes"><div class="lane"><div class="n">自動入力</div><h3>Androidの自動入力サービス</h3><p>ログインフォームやカードフォームがあなたのアイテムを直接提示します。ロック中はシステムに何も渡りません — まずロックを解除してから選択します。</p></div><div class="lane"><div class="n">キーボード</div><h3>Sekuvoキーボード</h3><p>どのアプリでも切り替えて、保存された秘密情報を直接フィールドに入力できます — 検索機能付き、最近使ったものが上部に、コピーの手順なしで。</p></div><div class="lane"><div class="n">Bluetooth</div><h3>あなたのコンピューターに入力</h3><p>あなたの端末がBluetoothキーボードになり、コンピューターのカーソル位置に秘密情報を入力します。コンピューターには何もインストールされません。</p></div></div>
   </section>
 
   <section id="download">
-    <span class="eyebrow">Obtenir Sekuvo</span>
-    <h2>Gratuit, open source, GPLv3.</h2>
+    <span class="eyebrow">Sekuvoを入手</span>
+    <h2>無料、オープンソース、GPLv3。</h2>
     <div class="dl">
       <div>
-        <h3>Application Android</h3>
-        <p>La fiche Google Play est en préparation. En attendant, tu peux compiler depuis les sources — le README du dépôt l'explique en deux commandes.</p>
-        <p><a href="https://sekuvo.com/fr/guide/#start">Lire le guide →</a></p>
+        <h3>Androidアプリ</h3>
+        <p>Google Playの掲載は準備中です。それまではソースコードからビルドできます — リポジトリのREADMEに2つのコマンドで説明されています。</p>
+        <p><a href="https://sekuvo.com/ja/guide/#start">ガイドを読む →</a></p>
       </div>
       <div>
-        <h3>Outils côté ordinateur</h3>
-        <p>L'outil côté ordinateur est un simple fichier HTML — <code>aktar.html</code> — et c'est un téléchargement, pas une page web : il fonctionne entièrement sur ta machine, et ce site ne te demande jamais de secret.</p>
-        <p class="mono-note" dir="ltr">github.com → Releases · vérifie le SHA-256 publié</p>
-        <p><a href="https://sekuvo.com/fr/guide/#transfer">Comment obtenir et utiliser aktar.html →</a></p>
+        <h3>コンピューター側のツール</h3>
+        <p>コンピューター側のツールは1つのHTMLファイル — <code>aktar.html</code> — で、ウェブサイトではなくダウンロードファイルです: 完全にあなたのマシン上で動作し、このサイトがあなたに秘密情報を尋ねることは決してありません。</p>
+        <p class="mono-note" dir="ltr">github.com → Releases · 公開されたSHA-256を確認</p>
+        <p><a href="https://sekuvo.com/ja/guide/#transfer">aktar.htmlの入手方法と使い方 →</a></p>
       </div>
     </div>
   </section>
 
   <footer>
-    <span>© 2026 Ahmet Govercile · Sekuvo — <em>ton coffre sécurisé.</em></span>
+    <span>© 2026 Ahmet Govercile · Sekuvo — <em>あなたの安全な保管庫。</em></span>
     <span dir="ltr">
       <a href="https://github.com/afgover/Vault">GitHub</a> ·
-      <a href="mailto:contact@sekuvo.com">Contact</a> ·
-      <a href="https://sekuvo.com/fr/privacy/">Confidentialité</a> ·
+      <a href="mailto:contact@sekuvo.com">お問い合わせ</a> ·
+      <a href="https://sekuvo.com/ja/privacy/">プライバシー</a> ·
       <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>
     </span>
   </footer>
