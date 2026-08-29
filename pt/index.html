@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr" dir="ltr">
+<html lang="pt" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sekuvo — güvenli kasan. Android için tamamen çevrimdışı parola kasası: internet izni yok, AES-256, açık kaynak (GPLv3).">
-<title>Sekuvo — Güvenli Kasan</title>
+<meta name="description" content="Sekuvo — seu cofre seguro. Um cofre de senhas totalmente offline para Android: sem permissão de internet, AES-256, código aberto (GPLv3).">
+<title>Sekuvo — Seu cofre seguro</title>
 <link rel="icon" href="/favicon.png" sizes="32x32">
 <link rel="icon" href="/img/icon-512.png" sizes="512x512">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
@@ -143,86 +143,86 @@
   <header>
     <span class="brand">Sekuvo</span>
     <nav>
-      <a href="#security">Güvenlik</a>
-      <a href="#channels">Kanallar</a>
-      <a href="#download">İndir</a>
-      <a href="https://sekuvo.com/tr/guide/">Kılavuz</a>
-      <a href="https://sekuvo.com/tr/privacy/">Gizlilik</a>
+      <a href="#security">Segurança</a>
+      <a href="#channels">Canais</a>
+      <a href="#download">Baixar</a>
+      <a href="https://sekuvo.com/pt/guide/">Guia</a>
+      <a href="https://sekuvo.com/pt/privacy/">Privacidade</a>
     </nav>
   </header>
   <div class="langs"><a href="https://sekuvo.com/" lang="en">English</a> ·
-    <a class="here" href="https://sekuvo.com/tr/" lang="tr">Türkçe</a> ·
+    <a href="https://sekuvo.com/tr/" lang="tr">Türkçe</a> ·
     <a href="https://sekuvo.com/es/" lang="es">Español</a> ·
     <a href="https://sekuvo.com/hi/" lang="hi">हिन्दी</a> ·
     <a href="https://sekuvo.com/ar/" lang="ar">العربية</a> ·
     <a href="https://sekuvo.com/zh/" lang="zh">简体中文</a> ·
     <a href="https://sekuvo.com/fr/" lang="fr">Français</a> ·
     <a href="https://sekuvo.com/bn/" lang="bn">বাংলা</a> ·
-    <a href="https://sekuvo.com/pt/" lang="pt">Português</a></div>
+    <a class="here" href="https://sekuvo.com/pt/" lang="pt">Português</a></div>
 
   <div class="hero">
     <div>
-      <span class="eyebrow">Android için çevrimdışı parola kasası</span>
-      <h1>Sırların<br>asla <em>çıkmaz.</em></h1>
-      <p class="lede">Sekuvo senin güvenli kasan: parolalar, kartlar ve notlar, yalnız ana parolandan türeyen bir anahtarla telefonunda şifrelenir. Sunucusu yok, hesabı yok, eşitlemesi yok — ve eve haber verme yolu yok.</p>
+      <span class="eyebrow">Cofre de senhas offline para Android</span>
+      <h1>Seus segredos<br>nunca <em>saem.</em></h1>
+      <p class="lede">O Sekuvo é o seu cofre seguro: senhas, cartões e notas, criptografados no seu telefone com uma chave que só a sua senha principal consegue derivar. Sem servidor, sem conta, sem sincronização — e nenhuma forma de avisar alguém.</p>
       <div class="cta">
-        <a class="btn solid" href="https://github.com/afgover/Vault">GitHub'da kaynak kodu</a>
-        <a class="btn ghost" href="https://sekuvo.com/tr/privacy/">Gizlilik politikası</a>
+        <a class="btn solid" href="https://github.com/afgover/Vault">Código-fonte no GitHub</a>
+        <a class="btn ghost" href="https://sekuvo.com/pt/privacy/">Política de privacidade</a>
       </div>
-      <p class="cta-note">Google Play kaydı hazırlanıyor. Sekuvo ücretsiz ve GPLv3 — kanıt kodun kendisi.</p>
+      <p class="cta-note">A ficha da Google Play está em preparação. O Sekuvo é gratuito e GPLv3 — o código é a prova.</p>
     </div>
 
-    <div class="proof" dir="ltr" role="img" aria-label="Uygulama manifesti kamera, biyometri ve Bluetooth istiyor; INTERNET izni araması hiçbir sonuç vermiyor.">
-      <span class="cap">AndroidManifest.xml — sahip olduğu bütün izinler</span>
+    <div class="proof" dir="ltr" role="img" aria-label="O manifesto do aplicativo pede câmera, biometria e Bluetooth, e uma busca pela permissão INTERNET não retorna nenhum resultado.">
+      <span class="cap">AndroidManifest.xml — todas as permissões que ele tem</span>
 <span class="p">&lt;uses-permission android:name="…USE_BIOMETRIC" /&gt;
 &lt;uses-permission android:name="…CAMERA" /&gt;
 &lt;uses-permission android:name="…VIBRATE" /&gt;
 &lt;uses-permission android:name="…BLUETOOTH_CONNECT" /&gt;</span>
 
 <span class="c">$ grep INTERNET AndroidManifest.xml</span>
-<span class="no">(eşleşme yok — böyle bir izin hiç yok)</span>
+<span class="no">(nenhum resultado — essa permissão não existe)</span>
     </div>
   </div>
 
   <section id="security">
-    <span class="eyebrow">Güvenlik modeli</span>
-    <h2>İnanılacak değil, denetlenecek şifreleme.</h2>
-    <p class="kicker">Her hassas alan AES-256-GCM ile mühürlenir. Anahtar hiçbir sunucuya uğramaz, çünkü sunucu yoktur; her kilit açışında telefonunda, ana parolandan türetilir.</p>
-    <div class="chain" dir="ltr">Ana parola ─<b>PBKDF2 · 310.000 tur</b>─▶ KEK ─<b>AES-GCM sarma</b>─▶ dataKey ─▶ her kayıtta <b>AES-256-GCM</b></div>
-    <div class="grid"><div class="cell"><h3>Ekran uyuyunca kilitlenir</h3><p>Ekran karardığı anda anahtar bellekten silinir — katlanabilir cihazı katlamak da sayılır. Tek kilit açma; uygulama, klavye ve otomatik doldurma için birlikte geçerlidir.</p></div><div class="cell"><h3>Telefondan uzun ömürlü yedek</h3><p>İstediğin yere koyduğun tek bir şifreli <span class="mono-note">.vaultbak</span> dosyası. Dosya artı yedek parolası her cihazda her şeyi geri getirir — kurtarma yolu uçtan uca sınandı.</p></div><div class="cell"><h3>Kurtarma arka kapısı yok</h3><p>Ana parolanı unutursan veri gider. Tasarım bu: yalnız senin açabildiğin bir kapının paspas altında yedek anahtarı olmaz.</p></div></div>
+    <span class="eyebrow">Modelo de segurança</span>
+    <h2>Criptografia para auditar, não para acreditar.</h2>
+    <p class="kicker">Todo campo sensível é selado com AES-256-GCM. A chave nunca toca um servidor porque não existe servidor; ela é derivada no seu telefone, a partir da sua senha principal, toda vez que você desbloqueia.</p>
+    <div class="chain" dir="ltr">Senha principal ─<b>PBKDF2 · 310.000 rodadas</b>─▶ KEK ─<b>envelopamento AES-GCM</b>─▶ dataKey ─▶ <b>AES-256-GCM</b> em cada item</div>
+    <div class="grid"><div class="cell"><h3>Bloqueia quando a tela apaga</h3><p>A chave é apagada da memória no instante em que a tela escurece — fechar um dobrável também conta. Um único desbloqueio serve o aplicativo, o teclado e o preenchimento automático juntos.</p></div><div class="cell"><h3>Backups que sobrevivem ao telefone</h3><p>Um único arquivo criptografado <span class="mono-note">.vaultbak</span>, guardado onde você escolher. Arquivo mais senha de backup restauram tudo em qualquer dispositivo — o caminho de recuperação é testado de ponta a ponta.</p></div><div class="cell"><h3>Sem porta dos fundos de recuperação</h3><p>Esqueça a senha principal e os dados se vão. É assim por design: uma porta que só você pode abrir não tem uma chave reserva debaixo do tapete.</p></div></div>
   </section>
 
   <section id="channels">
-    <span class="eyebrow">Tasarımı gereği panosuz</span>
-    <h2>Üç çıkış yolu, üçü de parmağının altında.</h2>
-    <p class="kicker">Pano, sırların çalınmaya gittiği yerdir. Sekuvo değerleri onun yerine doğrudan hedefine yazar.</p>
-    <div class="lanes"><div class="lane"><div class="n">Otomatik doldurma</div><h3>Android otomatik doldurma servisi</h3><p>Giriş ve kart formları kayıtlarını doğrudan sunar. Kilitliyken sisteme hiçbir şey gitmez — önce kilidi aç, sonra seç.</p></div><div class="lane"><div class="n">Klavye</div><h3>Sekuvo Klavyesi</h3><p>Herhangi bir uygulamada klavyeye geç, kayıtlı sırrı doğrudan alana yaz — aranabilir, son kullanılanlar üstte, kopyalama adımı yok.</p></div><div class="lane"><div class="n">Bluetooth</div><h3>Bilgisayarına yazar</h3><p>Telefonun Bluetooth klavyeye dönüşür ve sırrı bilgisayardaki imlecin olduğu yere yazar. Bilgisayara hiçbir şey kurulmaz.</p></div></div>
+    <span class="eyebrow">Sem área de transferência por design</span>
+    <h2>Três saídas, todas na ponta do seu dedo.</h2>
+    <p class="kicker">A área de transferência é onde segredos são roubados. O Sekuvo digita os valores direto no destino.</p>
+    <div class="lanes"><div class="lane"><div class="n">Preenchimento automático</div><h3>Serviço de preenchimento automático do Android</h3><p>Formulários de login e de cartão oferecem seus itens diretamente. Enquanto bloqueado, o sistema não recebe nada — desbloqueie primeiro, depois escolha.</p></div><div class="lane"><div class="n">Teclado</div><h3>Teclado Sekuvo</h3><p>Mude para ele em qualquer aplicativo e digite um segredo salvo direto no campo — pesquisável, recentes no topo, sem etapa de cópia.</p></div><div class="lane"><div class="n">Bluetooth</div><h3>Digita no seu computador</h3><p>Seu telefone vira um teclado Bluetooth e digita o segredo no cursor do computador. Nada é instalado no computador.</p></div></div>
   </section>
 
   <section id="download">
-    <span class="eyebrow">Sekuvo'yu edin</span>
-    <h2>Ücretsiz, açık kaynak, GPLv3.</h2>
+    <span class="eyebrow">Obter o Sekuvo</span>
+    <h2>Gratuito, código aberto, GPLv3.</h2>
     <div class="dl">
       <div>
-        <h3>Android uygulaması</h3>
-        <p>Google Play kaydı hazırlanıyor. O zamana kadar kaynaktan derleyebilirsin — depodaki README iki komutla anlatıyor.</p>
-        <p><a href="https://sekuvo.com/tr/guide/#start">Kılavuzu oku →</a></p>
+        <h3>Aplicativo Android</h3>
+        <p>A ficha da Google Play está em preparação. Até lá, você pode compilar a partir do código-fonte — o README do repositório explica em dois comandos.</p>
+        <p><a href="https://sekuvo.com/pt/guide/#start">Leia o guia →</a></p>
       </div>
       <div>
-        <h3>Bilgisayar tarafı araçlar</h3>
-        <p>Bilgisayar tarafındaki araç tek bir HTML dosyasıdır — <code>aktar.html</code> — ve web sayfası değil, indirilen bir dosyadır: tamamen kendi makinende çalışır ve bu site senden asla bir sır istemez.</p>
-        <p class="mono-note" dir="ltr">github.com → Releases · yayınlanan SHA-256'yı doğrula</p>
-        <p><a href="https://sekuvo.com/tr/guide/#transfer">aktar.html'i nasıl alır, nasıl kullanırsın →</a></p>
+        <h3>Ferramentas do lado do computador</h3>
+        <p>A ferramenta do lado do computador é um único arquivo HTML — <code>aktar.html</code> — e é um download, não uma página web: ela roda inteiramente na sua máquina, e este site nunca pede um segredo a você.</p>
+        <p class="mono-note" dir="ltr">github.com → Releases · confira o SHA-256 publicado</p>
+        <p><a href="https://sekuvo.com/pt/guide/#transfer">Como obter e usar o aktar.html →</a></p>
       </div>
     </div>
   </section>
 
   <footer>
-    <span>© 2026 Ahmet Govercile · Sekuvo — <em>güvenli kasan.</em></span>
+    <span>© 2026 Ahmet Govercile · Sekuvo — <em>seu cofre seguro.</em></span>
     <span dir="ltr">
       <a href="https://github.com/afgover/Vault">GitHub</a> ·
-      <a href="mailto:contact@sekuvo.com">İletişim</a> ·
-      <a href="https://sekuvo.com/tr/privacy/">Gizlilik</a> ·
+      <a href="mailto:contact@sekuvo.com">Contato</a> ·
+      <a href="https://sekuvo.com/pt/privacy/">Privacidade</a> ·
       <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>
     </span>
   </footer>
