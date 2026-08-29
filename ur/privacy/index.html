@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="hi" dir="ltr">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sekuvo निजता नीति: कोई डेटा एकत्र नहीं, कोई डेटा साझा नहीं, इंटरनेट अनुमति नहीं।">
-<title>Sekuvo — निजता नीति</title>
+<meta name="description" content="Sekuvo کی رازداری کی پالیسی: کوئی ڈیٹا جمع نہیں کیا جاتا، کوئی ڈیٹا شیئر نہیں کیا جاتا، انٹرنیٹ کی اجازت موجود نہیں۔">
+<title>Sekuvo — رازداری کی پالیسی</title>
 <link rel="icon" href="/favicon.png" sizes="32x32">
 <link rel="icon" href="/img/icon-512.png" sizes="512x512">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
@@ -20,7 +20,7 @@
 <link rel="alternate" hreflang="ru" href="https://sekuvo.com/ru/privacy/">
 <link rel="alternate" hreflang="ur" href="https://sekuvo.com/ur/privacy/">
 <link rel="alternate" hreflang="x-default" href="https://sekuvo.com/privacy/">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
   html { color-scheme: light dark; }
   :root {
@@ -50,13 +50,13 @@
     margin: 0;
     background: var(--ground);
     color: var(--ink);
-    font-family: "IBM Plex Sans Devanagari", system-ui, sans-serif;
+    font-family: "Noto Nastaliq Urdu", system-ui, sans-serif;
     font-size: 17px;
     line-height: 1.65;
   }
   .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
 
-  h1, h2, h3 { font-family: "IBM Plex Sans Devanagari", system-ui, sans-serif; line-height: 1.14; text-wrap: balance; margin: 0; }
+  h1, h2, h3 { font-family: "Noto Nastaliq Urdu", system-ui, sans-serif; line-height: 1.14; text-wrap: balance; margin: 0; }
   .eyebrow {
     font-family: "IBM Plex Mono", monospace;
     font-size: .78rem; letter-spacing: .18em; text-transform: uppercase;
@@ -66,7 +66,7 @@
   a:focus-visible, .btn:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
 
   header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1.6rem 0 0; flex-wrap: wrap; }
-  .brand { font-family: "IBM Plex Sans Devanagari", system-ui, sans-serif; font-weight: 700; font-size: 1.25rem; }
+  .brand { font-family: "Noto Nastaliq Urdu", system-ui, sans-serif; font-weight: 700; font-size: 1.25rem; }
   nav { display: flex; gap: 1.4rem; font-size: .92rem; flex-wrap: wrap; }
   nav a { color: var(--muted); text-decoration: none; }
   nav a:hover { color: var(--brass); }
@@ -155,26 +155,26 @@
 <div class="wrap">
   <header>
     <span class="brand">Sekuvo</span>
-    <nav><a href="https://sekuvo.com/hi/guide/">मार्गदर्शिका</a> <a href="https://sekuvo.com/hi/">sekuvo.com</a></nav>
+    <nav><a href="https://sekuvo.com/ur/guide/">رہنما</a> <a href="https://sekuvo.com/ur/">sekuvo.com</a></nav>
   </header>
   <div class="langs"><a href="https://sekuvo.com/privacy/" lang="en">English</a> ·
     <a href="https://sekuvo.com/tr/privacy/" lang="tr">Türkçe</a> ·
     <a href="https://sekuvo.com/es/privacy/" lang="es">Español</a> ·
-    <a class="here" href="https://sekuvo.com/hi/privacy/" lang="hi">हिन्दी</a> ·
+    <a href="https://sekuvo.com/hi/privacy/" lang="hi">हिन्दी</a> ·
     <a href="https://sekuvo.com/ar/privacy/" lang="ar">العربية</a> ·
     <a href="https://sekuvo.com/zh/privacy/" lang="zh">简体中文</a> ·
     <a href="https://sekuvo.com/fr/privacy/" lang="fr">Français</a> ·
     <a href="https://sekuvo.com/bn/privacy/" lang="bn">বাংলা</a> ·
     <a href="https://sekuvo.com/pt/privacy/" lang="pt">Português</a> ·
     <a href="https://sekuvo.com/ru/privacy/" lang="ru">Русский</a> ·
-    <a href="https://sekuvo.com/ur/privacy/" lang="ur">اردو</a></div>
+    <a class="here" href="https://sekuvo.com/ur/privacy/" lang="ur">اردو</a></div>
 
   <div class="prose">
-    <h1>निजता नीति</h1>
-    <p class="meta">ऐप: <strong>Sekuvo</strong> (com.sekuvo.app) · डेवलपर: Ahmet Govercile · प्रभावी तिथि: 2026-08-25</p>
-    <p class="note">यह पाठ अंग्रेज़ी मूल का अनुवाद है। मतभेद की स्थिति में <a href="https://sekuvo.com/privacy/">अंग्रेज़ी संस्करण</a> मान्य होगा।</p>
-    <h2>सारांश</h2><p><strong>Sekuvo कोई डेटा एकत्र, प्रेषित या साझा नहीं करता।</strong> यह एक ऑफ़लाइन पासवर्ड तिजोरी है। ऐप इंटरनेट अनुमति माँगता ही नहीं, इसलिए आपका डेटा कहीं भेजना तकनीकी रूप से असंभव है।</p><h2>डेटा का भंडारण</h2><p>आप Sekuvo में जो कुछ रखते हैं (शीर्षक, उपयोगकर्ता नाम, पासवर्ड, नोट्स, उपयोग इतिहास) वह आपके डिवाइस पर ही रहता है, आपके मास्टर पासवर्ड से बनी कुंजी से एन्क्रिप्टेड। ऐप कुछ भी किसी सर्वर पर अपलोड, सिंक या बैकअप नहीं करता।</p><h2>डेटा संग्रह और साझाकरण</h2><ul><li>कोई व्यक्तिगत डेटा एकत्र नहीं किया जाता।</li><li>किसी तीसरे पक्ष के साथ कोई डेटा साझा नहीं किया जाता।</li><li>कोई एनालिटिक्स, विज्ञापन या ट्रैकिंग लाइब्रेरी शामिल नहीं है।</li><li>ऐप इस्तेमाल करने के लिए खाता ज़रूरी नहीं।</li></ul><h2>अनुमतियाँ</h2><ul><li><strong>कैमरा</strong> — केवल उन QR कोड को पढ़ने के लिए जिन्हें आप स्कैन करना चुनते हैं, अपना डेटा आयात करते समय। फ़्रेम डिवाइस पर ही संसाधित होते हैं और कभी बाहर नहीं जाते।</li><li><strong>बायोमेट्रिक्स</strong> — केवल आपके डिवाइस पर तिजोरी खोलने के लिए, Android की बायोमेट्रिक प्रणाली के ज़रिए। Sekuvo आपकी उँगली या चेहरे का डेटा न कभी देखता है, न संग्रहीत करता है।</li><li><strong>ब्लूटूथ</strong> — केवल तब, जब आप स्पष्ट रूप से कहें कि Sekuvo पास के कंप्यूटर में ब्लूटूथ कीबोर्ड बनकर पासवर्ड टाइप करे। केवल वही अक्षर भेजे जाते हैं जो आप चुनते हैं, सीधे उस जोड़े गए डिवाइस को।</li></ul><h2>बैकअप और स्थानांतरण</h2><p>बैकअप और स्थानांतरण तभी होते हैं जब आप उन्हें शुरू करते हैं; वे आपके तय किए पासवर्ड से सुरक्षित एन्क्रिप्टेड फ़ाइल या QR कोड बनाते हैं, और केवल वहीं सहेजे या दिखाए जाते हैं जहाँ आप कहते हैं। ऐप उन्हें अपने आप कहीं नहीं भेजता।</p><h2>बच्चे</h2><p>Sekuvo किसी से भी डेटा एकत्र नहीं करता, बच्चों से भी नहीं।</p><h2>बदलाव</h2><p>यदि यह नीति कभी बदलती है, तो नया संस्करण अद्यतन प्रभावी तिथि के साथ इसी पते पर प्रकाशित किया जाएगा।</p><h2>संपर्क</h2><p>प्रश्न: <a href="mailto:contact@sekuvo.com">contact@sekuvo.com</a></p>
-    <a class="back" href="https://sekuvo.com/hi/">← sekuvo.com पर वापस</a>
+    <h1>رازداری کی پالیسی</h1>
+    <p class="meta">ایپ: <strong>Sekuvo</strong> (com.sekuvo.app) · ڈویلپر: Ahmet Govercile · نفاذ کی تاریخ: 2026-08-25</p>
+    <p class="note">یہ متن انگریزی اصل کا ترجمہ ہے۔ اختلاف کی صورت میں <a href="https://sekuvo.com/privacy/">انگریزی ورژن</a> کو ترجیح حاصل ہے۔</p>
+    <h2>خلاصہ</h2><p><strong>Sekuvo کوئی ڈیٹا جمع، منتقل، یا شیئر نہیں کرتا۔</strong> یہ ایک آف لائن پاس ورڈ والٹ ہے۔ ایپ انٹرنیٹ کی اجازت نہیں مانگتی، اس لیے تکنیکی طور پر آپ کا ڈیٹا کہیں بھی نہیں بھیج سکتی۔</p><h2>ڈیٹا کہاں محفوظ ہوتا ہے</h2><p>عنوانات، صارف نام، پاس ورڈز، نوٹس، اور استعمال کی تاریخ سمیت جو کچھ آپ Sekuvo میں محفوظ کرتے ہیں وہ اس ڈیوائس پر رہتا ہے، آپ کے ماسٹر پاس ورڈ سے حاصل کردہ کلید سے مرمز۔ ایپ اس میں سے کچھ بھی کسی سرور پر اپ لوڈ، سنک، یا بیک اپ نہیں کرتی۔</p><h2>ڈیٹا جمع کرنا اور شیئر کرنا</h2><ul><li>کوئی ذاتی ڈیٹا جمع نہیں کیا جاتا۔</li><li>کوئی ڈیٹا تیسرے فریق کے ساتھ شیئر نہیں کیا جاتا۔</li><li>کوئی اینالیٹکس، اشتہاری، یا ٹریکنگ لائبریری شامل نہیں۔</li><li>ایپ استعمال کرنے کے لیے کسی اکاؤنٹ کی ضرورت نہیں۔</li></ul><h2>اجازتیں</h2><ul><li><strong>کیمرہ</strong> — صرف ان QR کوڈز کو اسکین کرنے کے لیے استعمال ہوتا ہے جنہیں آپ خود منتخب کرتے ہیں، تاکہ آپ اپنا ڈیٹا درآمد کر سکیں۔ تصاویر ڈیوائس پر پروسیس ہوتی ہیں اور کبھی اسے چھوڑ کر نہیں جاتیں۔</li><li><strong>بایومیٹرک</strong> — صرف آپ کی ڈیوائس پر، اینڈرائیڈ کے بایومیٹرک سسٹم کے ذریعے والٹ کا تالا کھولنے کے لیے استعمال ہوتی ہے۔ Sekuvo آپ کا فنگر پرنٹ یا چہرے کا ڈیٹا کبھی نہیں دیکھتا یا محفوظ نہیں کرتا۔</li><li><strong>بلوٹوتھ</strong> — صرف اس وقت استعمال ہوتا ہے جب آپ واضح طور پر Sekuvo سے قریبی کمپیوٹر پر پاس ورڈ ٹائپ کرنے کے لیے کہتے ہیں، بلوٹوتھ کی بورڈ کے طور پر کام کرتے ہوئے۔ صرف وہ حروف بھیجے جاتے ہیں جو آپ منتخب کرتے ہیں، براہ راست جوڑا شدہ ڈیوائس کو۔</li></ul><h2>بیک اپس اور منتقلی</h2><p>یہ صرف اسی وقت ہوتے ہیں جب آپ انہیں شروع کرتے ہیں، ایک مرمز شدہ فائل یا آپ کے متعین کردہ پاس ورڈ سے محفوظ QR کوڈز بناتے ہیں، اور صرف وہیں محفوظ یا ظاہر ہوتے ہیں جہاں آپ ہدایت کرتے ہیں۔ ایپ کبھی خود سے انہیں کہیں نہیں بھیجتی۔</p><h2>بچے</h2><p>Sekuvo کسی سے بھی ڈیٹا جمع نہیں کرتا، بشمول بچوں کے۔</p><h2>تبدیلیاں</h2><p>اگر یہ پالیسی کبھی تبدیل ہوتی ہے، تو نیا ورژن اپ ڈیٹ شدہ نفاذ کی تاریخ کے ساتھ اسی پتے پر شائع کیا جائے گا۔</p><h2>رابطہ</h2><p>سوالات: <a href="mailto:contact@sekuvo.com">contact@sekuvo.com</a></p>
+    <a class="back" href="https://sekuvo.com/ur/">← sekuvo.com پر واپس</a>
   </div>
 
   <footer>
