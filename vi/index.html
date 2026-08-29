@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="vi" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sekuvo — tu bóveda segura. Una bóveda de contraseñas totalmente sin conexión para Android: sin permiso de internet, AES-256, código abierto (GPLv3).">
-<title>Sekuvo — Tu bóveda segura</title>
+<meta name="description" content="Sekuvo — kho lưu trữ an toàn của bạn. Một trình quản lý mật khẩu hoàn toàn ngoại tuyến cho Android: không quyền internet, mã hóa AES-256, mã nguồn mở (GPLv3).">
+<title>Sekuvo — Kho lưu trữ an toàn của bạn</title>
 <link rel="icon" href="/favicon.png" sizes="32x32">
 <link rel="icon" href="/img/icon-512.png" sizes="512x512">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
@@ -150,16 +150,16 @@
   <header>
     <span class="brand">Sekuvo</span>
     <nav>
-      <a href="#security">Seguridad</a>
-      <a href="#channels">Canales</a>
-      <a href="#download">Descargar</a>
-      <a href="https://sekuvo.com/es/guide/">Guía</a>
-      <a href="https://sekuvo.com/es/privacy/">Privacidad</a>
+      <a href="#security">Bảo mật</a>
+      <a href="#channels">Kênh</a>
+      <a href="#download">Tải xuống</a>
+      <a href="https://sekuvo.com/vi/guide/">Hướng dẫn</a>
+      <a href="https://sekuvo.com/vi/privacy/">Quyền riêng tư</a>
     </nav>
   </header>
   <div class="langs"><a href="https://sekuvo.com/" lang="en">English</a> ·
     <a href="https://sekuvo.com/tr/" lang="tr">Türkçe</a> ·
-    <a class="here" href="https://sekuvo.com/es/" lang="es">Español</a> ·
+    <a href="https://sekuvo.com/es/" lang="es">Español</a> ·
     <a href="https://sekuvo.com/hi/" lang="hi">हिन्दी</a> ·
     <a href="https://sekuvo.com/ar/" lang="ar">العربية</a> ·
     <a href="https://sekuvo.com/zh/" lang="zh">简体中文</a> ·
@@ -172,71 +172,71 @@
     <a href="https://sekuvo.com/de/" lang="de">Deutsch</a> ·
     <a href="https://sekuvo.com/ja/" lang="ja">日本語</a> ·
     <a href="https://sekuvo.com/pcm/" lang="pcm">Naija</a> ·
-    <a href="https://sekuvo.com/vi/" lang="vi">Tiếng Việt</a></div>
+    <a class="here" href="https://sekuvo.com/vi/" lang="vi">Tiếng Việt</a></div>
 
   <div class="hero">
     <div>
-      <span class="eyebrow">Bóveda de contraseñas sin conexión para Android</span>
-      <h1>Tus secretos<br>nunca <em>salen.</em></h1>
-      <p class="lede">Sekuvo es tu bóveda segura: contraseñas, tarjetas y notas, cifradas en tu teléfono con una clave que solo tu contraseña maestra puede derivar. Sin servidor, sin cuenta, sin sincronización — y sin forma de llamar a casa.</p>
+      <span class="eyebrow">Kho lưu trữ mật khẩu ngoại tuyến cho Android</span>
+      <h1>Bí mật của bạn<br>không bao giờ <em>rời đi.</em></h1>
+      <p class="lede">Sekuvo là kho lưu trữ an toàn của bạn: mật khẩu, thẻ, và ghi chú, được mã hóa trên điện thoại của bạn bằng một khóa mà chỉ mật khẩu chính của bạn mới có thể dẫn xuất. Không máy chủ, không tài khoản, không đồng bộ hóa — và không có cách nào để báo cho ai biết.</p>
       <div class="cta">
-        <a class="btn solid" href="https://github.com/afgover/Vault">Código en GitHub</a>
-        <a class="btn ghost" href="https://sekuvo.com/es/privacy/">Política de privacidad</a>
+        <a class="btn solid" href="https://github.com/afgover/Vault">Mã nguồn trên GitHub</a>
+        <a class="btn ghost" href="https://sekuvo.com/vi/privacy/">Chính sách quyền riêng tư</a>
       </div>
-      <p class="cta-note">La ficha de Google Play está en preparación. Sekuvo es gratis y GPLv3 — el código es la prueba.</p>
+      <p class="cta-note">Trang niêm yết trên Google Play đang được chuẩn bị. Sekuvo miễn phí và theo giấy phép GPLv3 — mã nguồn chính là bằng chứng.</p>
     </div>
 
-    <div class="proof" dir="ltr" role="img" aria-label="El manifiesto pide cámara, biometría y Bluetooth, y la búsqueda del permiso INTERNET no devuelve coincidencias.">
-      <span class="cap">AndroidManifest.xml — todos los permisos que tiene</span>
+    <div class="proof" dir="ltr" role="img" aria-label="Tệp kê khai của ứng dụng yêu cầu camera, sinh trắc học, và Bluetooth, và việc tìm kiếm quyền INTERNET không cho ra kết quả nào.">
+      <span class="cap">AndroidManifest.xml — tất cả các quyền mà nó có</span>
 <span class="p">&lt;uses-permission android:name="…USE_BIOMETRIC" /&gt;
 &lt;uses-permission android:name="…CAMERA" /&gt;
 &lt;uses-permission android:name="…VIBRATE" /&gt;
 &lt;uses-permission android:name="…BLUETOOTH_CONNECT" /&gt;</span>
 
 <span class="c">$ grep INTERNET AndroidManifest.xml</span>
-<span class="no">(sin coincidencias — ese permiso no existe)</span>
+<span class="no">(không có kết quả nào — quyền này không tồn tại)</span>
     </div>
   </div>
 
   <section id="security">
-    <span class="eyebrow">Modelo de seguridad</span>
-    <h2>Cifrado que puedes auditar, no creer.</h2>
-    <p class="kicker">Cada campo sensible se sella con AES-256-GCM. La clave nunca toca un servidor porque no hay servidor; se deriva en tu teléfono, desde tu contraseña maestra, cada vez que desbloqueas.</p>
-    <div class="chain" dir="ltr">Contraseña maestra ─<b>PBKDF2 · 310.000 rondas</b>─▶ KEK ─<b>envoltura AES-GCM</b>─▶ dataKey ─▶ <b>AES-256-GCM</b> en cada entrada</div>
-    <div class="grid"><div class="cell"><h3>Se bloquea cuando la pantalla se apaga</h3><p>La clave se borra de la memoria en cuanto la pantalla se apaga — plegar un plegable también cuenta. Un solo desbloqueo sirve para la app, el teclado y el autocompletado.</p></div><div class="cell"><h3>Copias que sobreviven al teléfono</h3><p>Un único archivo cifrado <span class="mono-note">.vaultbak</span> guardado donde tú elijas. El archivo más su contraseña restauran todo en cualquier dispositivo — la vía de recuperación está probada de extremo a extremo.</p></div><div class="cell"><h3>Sin puerta trasera de recuperación</h3><p>Si olvidas la contraseña maestra, los datos se pierden. Es el diseño: una puerta que solo tú abres no guarda una llave bajo el felpudo.</p></div></div>
+    <span class="eyebrow">Mô hình bảo mật</span>
+    <h2>Mã hóa mà bạn có thể kiểm chứng, chứ không phải tin tưởng suông.</h2>
+    <p class="kicker">Mỗi trường nhạy cảm đều được niêm phong bằng AES-256-GCM. Khóa không bao giờ chạm vào máy chủ vì không hề có máy chủ; nó được dẫn xuất trên điện thoại của bạn, từ mật khẩu chính của bạn, mỗi khi bạn mở khóa.</p>
+    <div class="chain" dir="ltr">Master password ─<b>PBKDF2 · 310,000 rounds</b>─▶ KEK ─<b>AES-GCM wrap</b>─▶ dataKey ─▶ <b>AES-256-GCM</b> on every entry</div>
+    <div class="grid"><div class="cell"><h3>Khóa lại khi màn hình tắt</h3><p>Khóa bị xóa khỏi bộ nhớ ngay khoảnh khắc màn hình tối đi — gập điện thoại có thể gập lại cũng được tính. Một lần mở khóa phục vụ cả ứng dụng, bàn phím, và tự động điền cùng lúc.</p></div><div class="cell"><h3>Các bản sao lưu tồn tại lâu hơn cả điện thoại</h3><p>Một tệp <span class="mono-note">.vaultbak</span> đã mã hóa duy nhất, được lưu ở bất cứ đâu bạn chọn. Tệp cùng với mật khẩu sao lưu khôi phục mọi thứ trên bất kỳ thiết bị nào — con đường khôi phục đã được kiểm chứng từ đầu đến cuối.</p></div><div class="cell"><h3>Không có cửa hậu để khôi phục</h3><p>Quên mật khẩu chính, dữ liệu sẽ mất. Đây là điều có chủ đích: một cánh cửa mà chỉ bạn mới mở được sẽ không giấu chìa khóa dự phòng dưới tấm thảm cửa.</p></div></div>
   </section>
 
   <section id="channels">
-    <span class="eyebrow">Sin portapapeles por diseño</span>
-    <h2>Tres salidas, todas bajo tu dedo.</h2>
-    <p class="kicker">El portapapeles es donde los secretos acaban robados. Sekuvo escribe los valores directamente en su destino.</p>
-    <div class="lanes"><div class="lane"><div class="n">Autocompletado</div><h3>Servicio de autocompletado de Android</h3><p>Los formularios de inicio de sesión y de tarjeta ofrecen tus entradas directamente. Bloqueado, el sistema no recibe nada — desbloquea primero, luego elige.</p></div><div class="lane"><div class="n">Teclado</div><h3>Teclado Sekuvo</h3><p>Cámbialo en cualquier app y escribe un secreto guardado en el campo — con búsqueda, los recientes arriba y sin paso de copiado.</p></div><div class="lane"><div class="n">Bluetooth</div><h3>Escribe en tu ordenador</h3><p>Tu teléfono se convierte en un teclado Bluetooth y escribe el secreto donde está el cursor. En el ordenador no se instala nada.</p></div></div>
+    <span class="eyebrow">Không dùng bộ nhớ tạm theo thiết kế</span>
+    <h2>Ba con đường, tất cả đều trong tầm tay bạn.</h2>
+    <p class="kicker">Bộ nhớ tạm là nơi bí mật bị đánh cắp. Đó là lý do Sekuvo gõ giá trị trực tiếp vào đích đến của chúng.</p>
+    <div class="lanes"><div class="lane"><div class="n">Tự động điền</div><h3>Dịch vụ tự động điền của Android</h3><p>Các biểu mẫu đăng nhập và thẻ gợi ý trực tiếp các mục của bạn. Khi đang khóa, hệ thống không nhận được gì cả — hãy mở khóa trước, rồi mới chọn.</p></div><div class="lane"><div class="n">Bàn phím</div><h3>Bàn phím Sekuvo</h3><p>Chuyển sang đó trong bất kỳ ứng dụng nào và gõ một bí mật đã lưu trực tiếp vào trường — với chức năng tìm kiếm, các mục gần đây ở trên cùng, không cần bước sao chép.</p></div><div class="lane"><div class="n">Bluetooth</div><h3>Nhập trên máy tính của bạn</h3><p>Điện thoại của bạn trở thành một bàn phím Bluetooth và gõ bí mật vào vị trí con trỏ trên máy tính. Không có gì được cài đặt trên máy tính.</p></div></div>
   </section>
 
   <section id="download">
-    <span class="eyebrow">Consigue Sekuvo</span>
-    <h2>Gratis, código abierto, GPLv3.</h2>
+    <span class="eyebrow">Tải Sekuvo</span>
+    <h2>Miễn phí, mã nguồn mở, GPLv3.</h2>
     <div class="dl">
       <div>
-        <h3>Aplicación Android</h3>
-        <p>La ficha de Google Play está en preparación. Hasta entonces puedes compilar desde el código — el README del repositorio lo explica en dos comandos.</p>
-        <p><a href="https://sekuvo.com/es/guide/#start">Lee la guía →</a></p>
+        <h3>Ứng dụng Android</h3>
+        <p>Trang niêm yết trên Google Play đang được chuẩn bị. Trong lúc chờ đợi, bạn có thể tự biên dịch từ mã nguồn — tệp README của kho lưu trữ giải thích điều này chỉ trong hai lệnh.</p>
+        <p><a href="https://sekuvo.com/vi/guide/#start">Đọc hướng dẫn →</a></p>
       </div>
       <div>
-        <h3>Herramientas de escritorio</h3>
-        <p>La herramienta de escritorio es un único archivo HTML — <code>aktar.html</code> — y es una descarga, no una página web: funciona por completo en tu máquina, y este sitio nunca te pide un secreto.</p>
-        <p class="mono-note" dir="ltr">github.com → Releases · verifica el SHA-256 publicado</p>
-        <p><a href="https://sekuvo.com/es/guide/#transfer">Cómo conseguir aktar.html y usarlo →</a></p>
+        <h3>Công cụ phía máy tính</h3>
+        <p>Công cụ phía máy tính là một tệp HTML duy nhất — <code>aktar.html</code> — và nó là một tệp tải xuống, không phải một trang web: nó chạy hoàn toàn trên máy của bạn, và trang này sẽ không bao giờ hỏi bạn về một bí mật.</p>
+        <p class="mono-note" dir="ltr">github.com → Releases · kiểm tra mã SHA-256 đã công bố</p>
+        <p><a href="https://sekuvo.com/vi/guide/#transfer">Cách lấy và sử dụng aktar.html →</a></p>
       </div>
     </div>
   </section>
 
   <footer>
-    <span>© 2026 Ahmet Govercile · Sekuvo — <em>tu bóveda segura.</em></span>
+    <span>© 2026 Ahmet Govercile · Sekuvo — <em>kho lưu trữ an toàn của bạn.</em></span>
     <span dir="ltr">
       <a href="https://github.com/afgover/Vault">GitHub</a> ·
-      <a href="mailto:contact@sekuvo.com">Contacto</a> ·
-      <a href="https://sekuvo.com/es/privacy/">Privacidad</a> ·
+      <a href="mailto:contact@sekuvo.com">Liên hệ</a> ·
+      <a href="https://sekuvo.com/vi/privacy/">Quyền riêng tư</a> ·
       <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>
     </span>
   </footer>
